@@ -1,0 +1,23 @@
+driver_id,driver_name,constructor_id,category
+piastri,Oscar Piastri,mclaren,normal
+norris,Lando Norris,mclaren,normal
+hamilton,Lewis Hamilton,ferrari,transition_now_settled
+leclerc,Charles Leclerc,ferrari,normal
+max_verstappen,Max Verstappen,red_bull,normal
+hadjar,Isack Hadjar,red_bull,partial_history
+russell,George Russell,mercedes,normal
+antonelli,Kimi Antonelli,mercedes,partial_history
+albon,Alex Albon,williams,normal
+sainz,Carlos Sainz,williams,normal
+hulkenberg,Nico Hulkenberg,audi,constructor_rebrand
+bortoleto,Gabriel Bortoleto,audi,constructor_rebrand
+alonso,Fernando Alonso,aston_martin,engine_change
+stroll,Lance Stroll,aston_martin,engine_change
+gasly,Pierre Gasly,alpine,normal
+colapinto,Franco Colapinto,alpine,partial_history
+ocon,Esteban Ocon,haas,normal
+bearman,Oliver Bearman,haas,normal
+lawson,Liam Lawson,rb,normal
+lindblad,Arvid Lindblad,rb,true_rookie
+perez,Sergio Perez,cadillac,returning_veteran_new_team
+bottas,Valtteri Bottas,cadillac,returning_veteran_new_team
