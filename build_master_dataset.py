@@ -129,8 +129,25 @@ def sanity_check(df):
     missing_weather = df[df["air_temp_mean"].isnull()][["season", "round", "race_name"]].drop_duplicates()
     print(missing_weather if len(missing_weather) > 0 else "  none")
     print()
-    print(f"Race-day rain rate (% of races, not driver-rows): "
-          f"{df.drop_duplicates(subset=['season','round'])['rained_during_race'].mean():.1%}")
+
+    # rained_during_race can come in as bool, float, string, or a mix
+    # after repeated CSV round-trips across multiple update runs - this
+    # crashed previously with a cryptic pandas error when the column
+    # ended up as mixed-type object dtype. Normalize explicitly before
+    # computing any rate from it, rather than assume a clean boolean.
+    race_level = df.drop_duplicates(subset=["season", "round"]).copy()
+    rain_col_normalized = (
+        race_level["rained_during_race"]
+        .map({True: True, False: False, "True": True, "False": False,
+              1: True, 0: False, 1.0: True, 0.0: False})
+    )
+    valid_rain_data = rain_col_normalized.dropna()
+    if len(valid_rain_data) > 0:
+        print(f"Race-day rain rate (% of races, not driver-rows, "
+              f"n={len(valid_rain_data)} races with known weather): "
+              f"{valid_rain_data.mean():.1%}")
+    else:
+        print("Race-day rain rate: no races with known weather data yet")
 
 
 if __name__ == "__main__":

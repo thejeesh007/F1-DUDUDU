@@ -172,10 +172,10 @@ season,round,race_name,air_temp_mean,air_temp_max,track_temp_mean,track_temp_max
 2023,20,São Paulo Grand Prix,20.5,21.1,46.8,52.4,58.2,1.3,1.0,0.01
 2023,21,Las Vegas Grand Prix,18.0,18.2,18.0,20.3,47.4,2.3,0.0,0.0
 2023,22,Abu Dhabi Grand Prix,27.0,27.7,33.5,38.2,51.0,1.8,0.0,0.0
-2026,1,Australian Grand Prix,,,,,,,,
-2026,2,Chinese Grand Prix,,,,,,,,
-2026,3,Japanese Grand Prix,,,,,,,,
-2026,4,Miami Grand Prix,,,,,,,,
-2026,5,Canadian Grand Prix,,,,,,,,
-2026,6,Monaco Grand Prix,,,,,,,,
-2026,7,Barcelona Grand Prix,,,,,,,,
+2026,1,Australian Grand Prix,24.2,25.3,36.1,39.1,54.0,2.6,False,0.0
+2026,2,Chinese Grand Prix,15.6,16.4,22.6,27.6,55.0,2.2,False,0.0
+2026,3,Japanese Grand Prix,18.6,19.5,34.1,38.3,52.5,2.0,False,0.0
+2026,4,Miami Grand Prix,27.1,28.1,37.0,42.3,70.4,1.2,True,0.02
+2026,5,Canadian Grand Prix,12.8,13.7,17.8,19.1,71.7,3.0,False,0.0
+2026,6,Monaco Grand Prix,23.7,24.5,38.0,46.0,62.2,0.8,False,0.0
+2026,7,Barcelona Grand Prix,30.5,31.1,50.3,52.3,28.9,2.6,False,0.0
